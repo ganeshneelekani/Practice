@@ -4,8 +4,18 @@ import java.util.List;
 public class Duplicate1 {
 
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws InterruptedException 
 	{
+		
+		
+		Object object=new Object();
+		synchronized (object) {
+			object.wait(z);
+			
+		}
+		
+		
+		
 		
 		List<Number> listOfNumbers=new ArrayList<>();
 		for(int i=1;i<300;i++) {

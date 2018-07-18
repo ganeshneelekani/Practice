@@ -24,15 +24,7 @@ public class MyQuickSort {
         int pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
         // Divide into two arrays
         while (i <= j) {
-            /**
-             * In each iteration, we will identify a number from left side which 
-             * is greater then the pivot value, and also we will identify a number 
-             * from right side which is less then the pivot value. Once the search 
-             * is done, then we exchange both numbers.
-             */
-        	System.out.println(pivot +" pivot ");
-        	System.out.println(array[i] +" array[i] ");
-        	System.out.println(array[j] +" array[j] ");
+           
             while (array[i] < pivot) {
                 i++;
             }
@@ -66,7 +58,7 @@ public class MyQuickSort {
          
         MyQuickSort sorter = new MyQuickSort();
       //  int[] input = {24,2,45,20,56,75,2,56,99,53,12};
-        int[] input = {24,45,2};
+        int[] input = {23, 56, 22 , 61 , 2};
         sorter.sort(input);
         for(int i:input){
             System.out.print(i);

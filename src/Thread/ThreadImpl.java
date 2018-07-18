@@ -6,6 +6,9 @@ public class ThreadImpl {
 		
 		MyThread myThread=new MyThread();
 		myThread.run();
+		
+		
+		
 	}
 
 }

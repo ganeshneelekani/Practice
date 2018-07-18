@@ -4,8 +4,16 @@ public class MyThread implements Runnable{
 
 	@Override
 	public void run() {
+		hello();
+	}
+
+
+	public synchronized void hello(){
 		// TODO Auto-generated method stub
-		System.out.println("=========1=======");
+		for (int i = 0; i < 10; i++) {
+			System.out.println(i);
+
+		}
 	}
 
 }
