@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit;
+
 public class Blocks {
 	int a=10;
 	static int b=20;
@@ -23,8 +25,26 @@ public class Blocks {
 		Blocks b= new Blocks(); // instance bock won't be executed unless you create an object
 		
 		System.out.println(b.a +"OOOOOOO");
-	}
+		
+		long milliseconds = 10000100;
+		long milliseconds1 = 20000100;
 
+	    // long minutes = (milliseconds / 1000) / 60;
+	    long minutes = TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis());
+
+	    // long seconds = (milliseconds / 1000);
+	    long seconds = TimeUnit.MILLISECONDS.toMinutes(System.currentTimeMillis());
+	    
+	    long  hour=seconds-minutes;
+	    
+	    int Hours = (int)hour/60;     
+	    int Minutes = (int)hour%60;     
+	    System.out.println(Hours+":"+Minutes); 
+
+	   
+	}
+	
+	
 }
 
 //Output
